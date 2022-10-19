@@ -19,6 +19,8 @@ EXPLAINERS = [
      "https://github.com/WICG/attribution-reporting-api/blob/main/AGGREGATE.md"),
     ("Attribution Reporting with event-level reports",
      "https://github.com/WICG/attribution-reporting-api/blob/main/EVENT.md"),
+    ("Bounce Tracking Mitigations",
+     "https://github.com/wanderview/bounce-tracking-mitigations/blob/main/explainer.md"),
     ("CHIPS API",
      "https://github.com/privacycg/CHIPS/blob/main/README.md"),
     ("Core Attribution API",

@@ -10,7 +10,7 @@ can be easily edited.
 1. Install Python dependencies (virtual environments are recommended,
 not documented here):
 
-`pip install -r requirements.txt`
+`pip3 install -r requirements.txt`
 
 2. Run the following command in a terminal:
 

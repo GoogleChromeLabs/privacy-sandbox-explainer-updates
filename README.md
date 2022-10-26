@@ -7,6 +7,32 @@ can be easily edited.
 
 # Set up
 
+Note: these instructions assume a unix-like environment. On Windows, make
+sure that the Windows Subsystem for Linux is first installed, then a
+bash-like shell in Windows can be installed.
+
+## Virtual Environment
+
+A virtual environment is an optional, but recommended step:
+
+1. Create a new virtual environment. Here we give it a name `env`, but
+you can name it whatever you like:
+
+`python3 -m venv env`
+
+2. Activate the virtual environment:
+
+`source env/bin/activate`
+
+## Getting the code and configuring the tool
+
+1. Clone the repository and navigate to the working directory:
+
+```bash
+git clone https://github.com/GoogleChromeLabs/privacy-sandbox-explainer-updates.git
+cd privacy-sandbox-explainer-updates/
+```
+
 1. Install Python dependencies (virtual environments are recommended,
 not documented here):
 
@@ -16,9 +42,11 @@ not documented here):
 
 `mv copyme.env .env`
 
-3. Put a GitHub [personal access token](https://github.com/settings/tokens) with
-a `public_repo` scope as the value to `TOKEN=` inside the newly created `.env`
-file. **Do not share this token**.
+3. Create a [personal access token](https://github.com/settings/tokens).
+You only need to select the `public_repo` scope, and the expiry is up to
+you.
+
+4. Paste the token inside the newly created `.env` file, after `TOKEN=`.
 
 # Usage
 
@@ -26,5 +54,5 @@ file. **Do not share this token**.
 
 # License
 
-Copyright 2022 Google LLC.  
+Copyright 2022 Google LLC.
 SPDX-License-Identifier: Apache-2.0

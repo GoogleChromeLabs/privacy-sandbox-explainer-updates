@@ -18,39 +18,39 @@ A virtual environment is an optional, but recommended step:
 1. Create a new virtual environment. Here we give it a name `env`, but
 you can name it whatever you like:
 
-`python3 -m venv env`
+    `python3 -m venv env`
 
 2. Activate the virtual environment:
 
-`source env/bin/activate`
+    `source env/bin/activate`
 
 ## Getting the code and configuring the tool
 
 1. Clone the repository and navigate to the working directory:
 
-```bash
-git clone https://github.com/GoogleChromeLabs/privacy-sandbox-explainer-updates.git
-cd privacy-sandbox-explainer-updates/
-```
+    ```bash
+    git clone https://github.com/GoogleChromeLabs/privacy-sandbox-explainer-updates.git
+    cd privacy-sandbox-explainer-updates/
+    ```
 
-1. Install Python dependencies (virtual environments are recommended,
+2. Install Python dependencies (virtual environments are recommended,
 not documented here):
 
-`pip3 install -r requirements.txt`
+    `pip3 install -r requirements.txt`
 
-2. Run the following command in a terminal:
+3. Run the following command in a terminal:
 
-`mv copyme.env .env`
+    `mv copyme.env .env`
 
-3. Create a [personal access token](https://github.com/settings/tokens).
+4. Create a [personal access token](https://github.com/settings/tokens).
 You only need to select the `public_repo` scope, and the expiry is up to
 you.
 
-4. Paste the token inside the newly created `.env` file, after `TOKEN=`.
+5. Paste the token inside the newly created `.env` file, after `TOKEN=`.
 
 # Usage
 
-`python3 pseupdates.py --since=2022-04-01`
+    `python3 pseupdates.py --since=2022-04-01`
 
 # License
 

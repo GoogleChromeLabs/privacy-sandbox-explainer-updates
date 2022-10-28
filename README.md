@@ -50,6 +50,8 @@ you.
 
 # Usage
 
+Navigate to the `privacy-sandbox-explainer-updates` directory in your terminal and run the following:
+
     `python3 pseupdates.py --since=2022-04-01`
 
 # License

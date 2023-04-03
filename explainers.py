@@ -35,7 +35,7 @@ EXPLAINERS = [
      "https://github.com/WICG/first-party-sets/blob/main/README.md"),
     ("FLEDGE API",
      "https://github.com/WICG/turtledove/blob/main/FLEDGE.md"),
-    ("Gnatcatcher",
+    ("IP Protection",
      "https://github.com/GoogleChrome/ip-protection/blob/master/README.md"),
     ("Network State Partitioning",
      "https://github.com/MattMenke2/Explainer---Partition-Network-State/blob/main/README.md"),

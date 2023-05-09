@@ -33,7 +33,7 @@ EXPLAINERS = [
      "https://github.com/WICG/fenced-frame/blob/master/explainer/README.md"),
     ("First Party Sets API",
      "https://github.com/WICG/first-party-sets/blob/main/README.md"),
-    ("FLEDGE API",
+    ("Protected Audience API",
      "https://github.com/WICG/turtledove/blob/main/FLEDGE.md"),
     ("IP Protection",
      "https://github.com/GoogleChrome/ip-protection/blob/master/README.md"),

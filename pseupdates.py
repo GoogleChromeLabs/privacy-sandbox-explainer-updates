@@ -83,8 +83,9 @@ def get_explainers(file: any, since: str, until: str):
 
 
 def main(since: str = typer.Option(today),
+         until: str = typer.Option(today),
          file: typer.FileTextWrite = typer.Option('explainers.html')):
-    get_explainers(file, since, today)
+    get_explainers(file, since, until)
     webbrowser.open_new(f"file://{os.path.realpath('explainers.html')}")
 
 

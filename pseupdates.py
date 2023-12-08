@@ -65,7 +65,7 @@ def get_explainers(file: any, since: str, until: str):
     bar = IncrementalBar("Fetching changes from GitHub", max=len(EXPLAINERS))
     file.write(
         f"""<!DOCTYPE html><body style="font-family: sans-serif"><h3>The following changes have been made to Explainers covered in Annex 1 from {since} to {until}:</h3><ul>""")
-    for explainer in EXPLAINERS:
+    for explainer in sorted(EXPLAINERS, key=lambda x: x[0]):
         shortname = explainer[0]
         parsed = parse_repo_url(explainer[1])
         api_url = get_api_url(parsed, since, until)

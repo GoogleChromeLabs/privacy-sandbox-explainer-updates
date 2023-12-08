@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Note: new explainers can be added to the end of the list, we sort them
+# before fetching from the GitHub API.
 EXPLAINERS = [
     ("Aggregation Service for the Attribution Reporting API",
      "https://github.com/WICG/attribution-reporting-api/blob/main/AGGREGATION_SERVICE_TEE.md"),

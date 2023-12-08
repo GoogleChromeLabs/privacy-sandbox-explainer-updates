@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Note: new explainers can be added to the end of the list, we sort them
+# before fetching from the GitHub API.
 EXPLAINERS = [
     ("Aggregation Service for the Attribution Reporting API",
      "https://github.com/WICG/attribution-reporting-api/blob/main/AGGREGATION_SERVICE_TEE.md"),
@@ -31,7 +33,7 @@ EXPLAINERS = [
      "https://github.com/fedidcg/FedCM/blob/main/explainer.md"),
     ("Fenced Frames API",
      "https://github.com/WICG/fenced-frame/blob/master/explainer/README.md"),
-    ("First Party Sets API",
+    ("Related Website Sets",
      "https://github.com/WICG/first-party-sets/blob/main/README.md"),
     ("Protected Audience API",
      "https://github.com/WICG/turtledove/blob/main/FLEDGE.md"),
@@ -51,4 +53,14 @@ EXPLAINERS = [
      "https://github.com/WICG/trust-token-api/blob/main/README.md"),
     ("User-Agent Client Hints",
      "https://github.com/WICG/ua-client-hints/blob/main/README.md"),
+    ("3PCD Exemption Heuristics",
+     "https://github.com/amaliev/3pcd-exemption-heuristics/blob/main/explainer.md"),
+    ("Private Aggregation API",
+     "https://github.com/patcg-individual-drafts/private-aggregation-api/blob/main/README.md"),
+    ("Private Aggregation API Report Verification",
+     "https://github.com/patcg-individual-drafts/private-aggregation-api/blob/main/report_verification.md"),
+    ("Storage Access API",
+     "https://github.com/cfredric/chrome-storage-access-api/blob/main/README.md"),
+    ("Storage Access API for Non-Cookie Storage",
+     "https://github.com/arichiv/saa-non-cookie-storage/blob/main/README.md")
 ]

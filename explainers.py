@@ -49,7 +49,7 @@ EXPLAINERS = [
      "https://github.com/wanderview/quota-storage-partitioning/blob/main/explainer.md"),
     ("Topics API",
      "https://github.com/patcg-individual-drafts/topics/blob/main/README.md"),
-    ("Trust Tokens API",
+    ("Private State Tokens API",
      "https://github.com/WICG/trust-token-api/blob/main/README.md"),
     ("User-Agent Client Hints",
      "https://github.com/WICG/ua-client-hints/blob/main/README.md"),
@@ -62,5 +62,7 @@ EXPLAINERS = [
     ("Storage Access API",
      "https://github.com/cfredric/chrome-storage-access-api/blob/main/README.md"),
     ("Storage Access API for Non-Cookie Storage",
-     "https://github.com/arichiv/saa-non-cookie-storage/blob/main/README.md")
+     "https://github.com/arichiv/saa-non-cookie-storage/blob/main/README.md"),
+    ("Form Factor User-Agent Client Hint",
+     "https://github.com/djmitche/web-explainers/blob/main/sec-ch-ua-form-factor.md")
 ]

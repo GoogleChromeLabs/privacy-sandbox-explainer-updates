@@ -76,6 +76,8 @@ def get_explainers(file: any, since: str, until: str):
     bar = IncrementalBar("Fetching changes from GitHub", max=len(EXPLAINERS))
     file.write(
         f"""<!DOCTYPE html><body style="font-family: sans-serif"><h3>The following changes have been made to Explainers covered in Annex 1 from {since} to {until}:</h3><ul>""")
+    update_seen = False
+
     for explainer in sorted(EXPLAINERS, key=lambda x: x[0]):
         shortname = explainer[0]
         parsed = parse_repo_url(explainer[1])
@@ -87,9 +89,13 @@ def get_explainers(file: any, since: str, until: str):
             print(e)
         commits = rv.json()
         if len(commits):
+            update_seen = True
             file.write(
                 f'<li>{shortname} - {len(commits)} {"changes" if len(commits) > 1 else "change"}, see <a href="{get_html_url(api_url)}">GitHub</a>.</li>')
         bar.next()
+
+    if not update_seen:
+        file.write(f'<li>No updates made to any explainer for the given time range.</li>')
     file.write('</ul></body>\n')
     bar.finish()
 

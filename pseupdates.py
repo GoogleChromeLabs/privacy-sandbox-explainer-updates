@@ -60,17 +60,6 @@ def parse_repo_url(explainer_url: str):
     explainer_path = explainer_url.split("/")[-1]
     return {"repo": owner_repo, "path": explainer_path}
 
-def verify_token():
-    """Make sure that we have a valid GitHub token.
-
-    We do this by requesting the /issues endpoint, which we should have access
-    to with the public_repo scope. If it's invalid - it'll return a 401 and we
-    can bail."""
-    rv = requests.get("https://api.github.com/user/issues", headers=HEADERS)
-    if rv.status_code == 401:
-        return False
-    return True
-
 
 def get_explainers(file: any, since: str, until: str):
     bar = IncrementalBar("Fetching changes from GitHub", max=len(EXPLAINERS))
@@ -84,7 +73,6 @@ def get_explainers(file: any, since: str, until: str):
         api_url = get_api_url(parsed, since, until)
         try:
             rv = requests.get(api_url, headers=HEADERS)
-            rv.raise_for_status()
         except Exception as e:
             print(e)
         commits = rv.json()
@@ -103,11 +91,8 @@ def get_explainers(file: any, since: str, until: str):
 def main(since: str = typer.Option(today),
          until: str = typer.Option(today),
          file: typer.FileTextWrite = typer.Option('explainers.html')):
-    if verify_token():
-        get_explainers(file, since, until)
-        webbrowser.open_new(f"file://{os.path.realpath('explainers.html')}")
-    else:
-        print("Double check your GitHub token at https://github.com/settings/tokens - it seems to be invalid.")
+    get_explainers(file, since, until)
+    webbrowser.open_new(f"file://{os.path.realpath('explainers.html')}")
 
 
 if __name__ == "__main__":

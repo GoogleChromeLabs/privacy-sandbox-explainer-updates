@@ -56,7 +56,7 @@ Navigate to the `privacy-sandbox-explainer-updates` directory in your terminal a
 
 # RSS
 
-For RSS subscriber, you can generate a RSS OPML file and run the following:
+For users of RSS, you can generate a RSS OPML file by running the following:
 
     `python3 rssgenerator.py`
 

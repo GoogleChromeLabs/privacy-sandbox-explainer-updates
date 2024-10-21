@@ -54,6 +54,14 @@ Navigate to the `privacy-sandbox-explainer-updates` directory in your terminal a
 
     `python3 pseupdates.py --since=2022-04-01`
 
+# RSS
+
+For users of RSS, you can generate a RSS OPML file by running the following:
+
+    `python3 rssgenerator.py`
+
+Then, import the generated OPML file `privacy-sandbox-explainer-updates.opml` to your RSS client.
+
 # License
 
 Copyright 2022 Google LLC.

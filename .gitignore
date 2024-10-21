@@ -1,4 +1,5 @@
 .env
 env/
 explainers.html
+privacy-sandbox-explainer-updates.opml
 __pycache__

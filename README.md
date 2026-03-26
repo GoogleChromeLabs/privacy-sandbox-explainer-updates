@@ -1,4 +1,4 @@
-# Privacy Sandbox Explainer Updates
+# [ARCHIVED] Privacy Sandbox Explainer Updates
 
 This script allows a user to print out the list of explainer commits
 after a given date until the current date. `explainers.py` contains the
